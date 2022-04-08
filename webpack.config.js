@@ -21,6 +21,8 @@ module.exports = {
             { //um objeto p/ cada tipo de arquivo.
                 //test recebe uma expressão regular para dizer se o arquivo é ou não js
                 test: /\.jsx$/,
+                exclude: /node_module/, //excluindo o estiver no node_modules
+                
 
             }
         ],
