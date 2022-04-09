@@ -5,7 +5,7 @@ module.exports = {
     //falando qual o arquivo que vai ser gerado com o webpack.
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
     },
 
     //instrução resolve.
@@ -21,7 +21,7 @@ module.exports = {
             { //um objeto p/ cada tipo de arquivo.
                 //test recebe uma expressão regular para dizer se o arquivo é ou não js
                 test: /\.jsx$/,
-                exclude: /node_module/, //excluindo o estiver no node_modules
+                exclude: /node_modules/, //excluindo o estiver no node_modules
                 use: 'babel-loader',
                 
 
