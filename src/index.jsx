@@ -1,6 +1,8 @@
 //configurando o reactjs
 import React from 'react';
+import { App } from '.App';
+
 
 function App() {
-    return <h1>Hello World!</h1>
+    return <h1>Hello</h1>
 }
