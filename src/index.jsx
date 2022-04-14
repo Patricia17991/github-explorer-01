@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; //quando dá erro pode ser só uma questão de importação
 import {render} from 'react-dom';
 import {App} from './App';
 
