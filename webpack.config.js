@@ -14,8 +14,7 @@ module.exports = {
   },
 
   devServer: {
-      contentBase: path.resolve(__dirname, 'public'),
-      //aqui fica o conteúdo estático da nossa aplicação
+      static: path.resolve(__dirname, 'public'),
   },
 
   plugins: [
