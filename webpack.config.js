@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV !== 'production;'//variavel JS que dis se o ambiente é de desenvolvimento ou de produção
+//precisaa criar a variável NODE_ENV
 
 module.exports = {
   mode: isDevelopment ?'development' : 'production',
