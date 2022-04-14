@@ -1,5 +1,4 @@
-//configurando o reactjs
-import React from 'react';
-import { App } from '.App';
+import {render} from 'react-dom';
+import {App} from './App';
 
 
