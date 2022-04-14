@@ -1,7 +1,6 @@
 module.exports = {
-    //configurações do Babel
     presets: [
         '@babel/preset-env',
-        '@babel/preset-react'
+        ['@babel/preset-react'] //forma de configurar no babel com colchetes
     ]
 }
