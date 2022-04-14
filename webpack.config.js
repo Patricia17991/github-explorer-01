@@ -13,6 +13,11 @@ module.exports = {
       extensions: ['.js', '.jsx'],
   },
 
+  devServer: {
+      contentBase: path.resolve(__dirname, 'public'),
+      //aqui fica o conteúdo estático da nossa aplicação
+  },
+
   plugins: [
       new HtmlWebpackPlugin({
           template: path.resolve(__dirname, 'public', 'index.html')
