@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const isDevelopment = process.env.NODE_ENV !== 'production;'//variavel JS que dis se o ambiente é de desenvolvimento ou de produção
 //precisaa criar a variável NODE_ENV
 
@@ -22,11 +22,12 @@ module.exports = {
   },
 
   plugins: [
+      isDevelopment && new ReactRefreshWebpackPlugin(),
       new HtmlWebpackPlugin({
           template: path.resolve(__dirname, 'public', 'index.html')
       })
 
-  ],
+  ].filter(Boolean),
 
   module: {
       rules: [
