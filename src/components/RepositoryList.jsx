@@ -6,6 +6,9 @@ export function RepositoryList(){
             <h1>Lista de Repositórios</h1>
             <ul>
               <RepositoryItem/>
+              <RepositoryItem/>
+              <RepositoryItem/>
+              <RepositoryItem/>
             </ul>
         </section>
     );
