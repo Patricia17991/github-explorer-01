@@ -1,6 +1,5 @@
 export function RepositoryList(){
     return(
-        //aqui vamos devolver uma listagem de repositórios
         <section className="repository-list">
             <h1>Lista de Repositórios</h1>
             <ul>
@@ -8,7 +7,21 @@ export function RepositoryList(){
                     <strong>unform</strong> 
                     <p>Forms in React</p>
                     <a href="">
-                        Aceesar o repositório
+                        Acessar o repositório
+                    </a>
+                </li>
+                <li>
+                    <strong>unform</strong> 
+                    <p>Forms in React</p>
+                    <a href="">
+                        Acessar o repositório
+                    </a>
+                </li>
+                <li>
+                    <strong>unform</strong> 
+                    <p>Forms in React</p>
+                    <a href="">
+                        Acessar o repositório
                     </a>
                 </li>
             </ul>
