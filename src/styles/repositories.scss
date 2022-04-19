@@ -13,5 +13,19 @@ section.repository-list {
             & + li { /*sempre q/ tiver uma li eu vou pegar a próxima li e dar uma margem-top:20px;*/
                 margin-top: 20px;
             }
+
+            p {
+                font-size: 14px;
+                color: #444;
+                margin-top: 8px;
+
+            }
+
+            a {
+                display: inline-block; /*display inline que permite fazermos um mafin-top, margin-botton...*/
+                margin-top: 16px;
+                text-decoration: none; /*tirar a linha*/
+                color: #8257ed;
+
+            }
         }
-    }
