@@ -13,7 +13,7 @@ section.repository-list {
             margin-bottom: 20px;
 
             /*pegando o último li e tiando a margem botton */
-            &:last-child {
+            &:last-child { /*essa é uma forma de fazer isso*/
                 margin: 0;
                 
             }
