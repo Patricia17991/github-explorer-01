@@ -9,12 +9,9 @@ section.repository-list {
         list-style: none; /*tirando a formatação padrão das listas*/
 
         li {
-            /*separando um li do outro*/
-            margin-bottom: 20px;
-
-            /*pegando o último li e tiando a margem botton */
-            &:last-child { /*essa é uma forma de fazer isso*/
-                margin: 0;
-                
+            /*  o & no sass referência o próprio elemento*/
+            & + li { /*sempre q/ tiver uma li eu vou pegar a próxima li e dar uma margem-top:20px;*/
+                margin-top: 20px;
             }
         }
+    }
