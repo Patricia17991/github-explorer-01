@@ -5,9 +5,6 @@ import '../styles/repositories.scss'
 // https://api.github.com/orgs/rocketseat/repos
 //por padrão só 21 repositórios vão ser listados por conta da paginção, mas nós conseguimos mostrar mais 
 
-
-
-
 export function RepositoryList(){
     const[repositories, setRepositories] = useState([]);  //criando um estado para armazenar a listagem de repositórios
 
@@ -21,9 +18,7 @@ export function RepositoryList(){
         <section className="repository-list">
             <h1>Lista de Repositórios</h1>
             <ul>
-              {repositories.map(repository => (
-                  <RepositoryItem repository={repository}/>
-              ))} 
+              {repositories.map(repository => <RepositoryItem repository={repository}/>)} 
               
             </ul>
         </section> //o map percorre cada repositório e retorna algo para cada um
