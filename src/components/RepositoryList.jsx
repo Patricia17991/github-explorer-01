@@ -3,7 +3,7 @@ import { RepositoryItem } from "./RepositoryItem";
 import '../styles/repositories.scss'
 
 // https://api.github.com/orgs/rocketseat/repos
-//por padrão só 21 repositórios vão ser listados
+//por padrão só 21 repositórios vão ser listados por conta da paginção, mas nós conseguimos mostrar mais 
 
 const repository = {
     name:'unform',
