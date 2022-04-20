@@ -14,7 +14,9 @@ export function RepositoryList(){
     const[repositories, setRepositories] = useState([]);  //criando um estado para armazenar a listagem de repositórios
 
     useEffect(() => {
-        
+        fetch('https://api.github.com/orgs/rocketseat/repos')
+        .then(response => response.json()) //convertendo a resposta em json
+        .then(data => console.log(data)) //quando a conversão ocorrer vou ter os dados
     }, [])
 
     return(
@@ -28,4 +30,3 @@ export function RepositoryList(){
             </ul>
         </section>
     );
-}
