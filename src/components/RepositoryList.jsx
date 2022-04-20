@@ -3,7 +3,7 @@ import { RepositoryItem } from "./RepositoryItem";
 import '../styles/repositories.scss'
 
 // https://api.github.com/orgs/rocketseat/repos
-
+//por padrão só 20 repositórios vão ser listados
 const repository = {
     name:'unform',
     description:'Forms in React',
