@@ -5,6 +5,7 @@ import '../styles/repositories.scss'
 // https://api.github.com/orgs/rocketseat/repos
 //por padrão só 21 repositórios vão ser listados por conta da paginção, mas nós conseguimos mostrar mais 
 
+
 const repository = {
     name:'unform',
     description:'Forms in React',
@@ -17,7 +18,7 @@ export function RepositoryList(){
     useEffect(() => {
         fetch('https://api.github.com/orgs/rocketseat/repos')
         .then(response => response.json()) //convertendo a resposta em json
-        .then(data => console.log(data)) //quando a conversão ocorrer vou ter os dados
+        .then(data => setRepositories(data)) //salvando os dados na variável repositóries/ quando a conversão ocorrer vou ter os dados
     }, [])
 
     return(
@@ -31,3 +32,4 @@ export function RepositoryList(){
             </ul>
         </section>
     );
+}
