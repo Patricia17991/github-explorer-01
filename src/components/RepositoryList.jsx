@@ -13,7 +13,9 @@ const repository = {
 export function RepositoryList(){
     const[repositories, setRepositories] = useState([]);  //criando um estado para armazenar a listagem de repositórios
 
-    useEffect(() => {}, [repositories])
+    useEffect(() => {
+        
+    }, [])
 
     return(
         <section className="repository-list">
