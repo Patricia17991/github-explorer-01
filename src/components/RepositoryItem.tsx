@@ -1,3 +1,13 @@
+interface RepositoryItemProps {
+    repository: {
+        name: string;
+        description: string;
+        html_url: string;
+    }
+}
+
+
+
 export function RepositoryItem(props){
     return( //se eu for retornar só uma linha de html aí não preciso dos ().
             <li>
