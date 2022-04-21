@@ -8,7 +8,7 @@ interface RepositoryItemProps {
 
 
 
-export function RepositoryItem(props){
+export function RepositoryItem(props:RepositoryItemProps){
     return( //se eu for retornar só uma linha de html aí não preciso dos ().
             <li>
             <strong>{props.repository.name}</strong> 
