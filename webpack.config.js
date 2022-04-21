@@ -33,7 +33,7 @@ module.exports = {
   module: {
       rules: [
           {
-             test: /\.jsx$/,
+             test: /\.(j|t)sx$/, //dizendo que pode ser 'j' ou 't'.
              exclude: /node_modules/,
              use: {
                  loader:'babel-loader',
@@ -50,6 +50,6 @@ module.exports = {
               use: ['style-loader', 'css-loader', 'sass-loader'],
           }
       ],
-  }  
+  }
 
 };
