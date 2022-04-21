@@ -1,21 +1,32 @@
-interface RepositoryItemProps {
-    repository: {
-        name: string;
-        description: string;
-        html_url: string;
-    }
+import {useState, useEffect} from 'react';
+import { RepositoryItem } from "./RepositoryItem";
+import '../styles/repositories.scss'
+
+//por padrão só 21 repositórios vão ser listados por conta da paginção, mas nós conseguimos mostrar mais 
+
+interface Repository {
+    name: string;
+
 }
 
+export function RepositoryList(){
+    const[repositories, setRepositories] = useState<Repository[]>([]);  //criando um estado para armazenar a listagem de repositórios
 
+    useEffect(() => {
+        fetch('https://api.github.com/orgs/rocketseat/repos')
+        .then(response => response.json()) //convertendo a resposta em json
+        .then(data => setRepositories(data)) //salvando os dados na variável repositóries/ quando a conversão ocorrer vou ter os dados
+    }, [])
 
-export function RepositoryItem(props:RepositoryItemProps){
-    return( //se eu for retornar só uma linha de html aí não preciso dos ().
-            <li>
-            <strong>{props.repository.name}</strong> 
-            <p>{props.repository.description}</p>
-            <a href={props.repository.html_url}>
-            Acessar o repositório
-            </a>
-            </li>
+    return(
+        <section className="repository-list">
+            <h1>Lista de Repositórios</h1>
+            <ul>
+              {repositories.map(repository => {
+                  return <RepositoryItem key={repository.name} repository={repository}/>
+              })} 
+              
+            </ul>
+        </section> //o map percorre cada repositório e retorna algo para cada um
     );
 }
