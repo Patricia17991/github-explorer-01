@@ -10,7 +10,7 @@ section.repository-list {
 
         li {
             /*  o & no sass referência o próprio elemento*/
-            & + li { /*sempre q/ tiver uma li eu vou pegar a próxima li e dar uma margem-top:20px;*/
+            & + li { /*sempre que tiver uma 'li' eu vou pegar a próxima 'li' e dar uma margem-top:20px;*/
                 margin-top: 20px;
             }
 
