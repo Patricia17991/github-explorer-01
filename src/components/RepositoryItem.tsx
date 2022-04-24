@@ -3,7 +3,6 @@ import { RepositoryItem } from "./RepositoryItem";
 import '../styles/repositories.scss'
 
 //por padrão só 21 repositórios vão ser listados por conta da paginção, mas nós conseguimos mostrar mais 
-
 interface Repository {
     name: string;
     description: string;
