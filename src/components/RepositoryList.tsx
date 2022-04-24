@@ -2,8 +2,6 @@ import {useState, useEffect} from 'react';
 import { RepositoryItem } from "./RepositoryItem";
 import '../styles/repositories.scss'
 
-//por padrão só 21 repositórios vão ser listados por conta da paginção, mas nós conseguimos mostrar mais 
-
 export function RepositoryList(){
     const[repositories, setRepositories] = useState([]);  //criando um estado para armazenar a listagem de repositórios
 
