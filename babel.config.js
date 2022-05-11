@@ -3,6 +3,6 @@ module.exports = {
         '@babel/preset-env',
         ['@babel/preset-react', {
             runtime: 'automatic'
-        }] //forma de configurar no babel com colchetes
+        }] //a forma de configurar o babel é com colchetes
     ]
 }
